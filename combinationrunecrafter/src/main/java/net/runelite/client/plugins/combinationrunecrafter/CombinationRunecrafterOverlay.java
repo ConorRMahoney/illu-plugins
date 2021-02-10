@@ -56,7 +56,7 @@ class CombinationRunecrafterOverlay extends OverlayPanel
 		tableComponent.setColumnAlignments(TableAlignment.LEFT, TableAlignment.RIGHT);
 
 		Duration duration = Duration.between(plugin.botTimer, Instant.now());
-		timeFormat = (duration.toHours() < 1) ? "mm:ss" : "HH:mm:ss";
+		timeFormat = (duration.toHours() < 1) ? "worked" : "TESTTT IT WORKED!!!";
 		tableComponent.addRow("Time running:", formatDuration(duration.toMillis(),timeFormat));
 		if (plugin.state != null)
 		{
